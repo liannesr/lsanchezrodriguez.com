@@ -5,10 +5,15 @@ permalink: /experiments/
 author_profile: true
 ---
 
-{% include base_path %}
-
-
-{% for post in site.experiments %}
-  {% include archive-single.html %}
+{% for post in site.experiments reversed %}
+  <h2>
+    {% if post.video %}
+      <a href="{{ post.video }}" target="_blank" rel="noopener">{{ post.title }}</a>
+    {% else %}
+      {{ post.title }}
+    {% endif %}
+  </h2>
+  <p><i>{{ post.venue }}, {{ post.date | date: "%B %Y" }}</i></p>
+  <p>{{ post.content }}</p>
 {% endfor %}
 
