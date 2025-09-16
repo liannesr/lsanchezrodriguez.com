@@ -11,8 +11,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  # - title: "Books"
-  #   url: /books/ 
+  - title: "Experiments"
+    url: /experiments/ 
 
   - title: "Talks"
     url: /talks/    
