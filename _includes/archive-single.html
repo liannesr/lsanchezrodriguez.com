@@ -99,28 +99,21 @@
 
 <div class="pub-item">
   <p>
-    {% if post.citation %}
-      {% if post.paperurl %}
-        {{ post.citation | replace: post.title, '<a href="' | append: post.paperurl | append: '" target="_blank" rel="noopener">' | append: post.title | append: '</a>' }}
-      {% else %}
-        {{ post.citation }}
-      {% endif %}
+    {% if post.authors %}
+      {{ post.authors }},
+    {% endif %}
+    {% if post.date %}
+      ({{ post.date | date: "%Y" }})
+    {% endif %}
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank" rel="noopener">{{ post.title }}</a>.
     {% else %}
-      {% if post.authors %}
-        {{ post.authors }},
-      {% endif %}
-      {% if post.date %}
-        ({{ post.date | date: "%Y" }})
-      {% endif %}
-      {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" target="_blank" rel="noopener">{{ post.title }}</a>.
-      {% else %}
-        {{ post.title }}.
-      {% endif %}
-      {% if post.venue %}
-        <i>{{ post.venue }}</i>
-      {% endif %}
+      {{ post.title }}.
+    {% endif %}
+    {% if post.venue %}
+      <i>{{ post.venue }}</i>
     {% endif %}
   </p>
 </div>
+
 
