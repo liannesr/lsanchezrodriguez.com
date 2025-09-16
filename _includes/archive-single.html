@@ -1,4 +1,4 @@
-{% include base_path %}
+<!-- {% include base_path %}
 
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
@@ -33,7 +33,7 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2> -->
-    <h2 class="archive__item-title" itemprop="headline">
+<!--     <h2 class="archive__item-title" itemprop="headline">
   {% if post.paperurl %}
     <a href="{{ post.paperurl }}" target="_blank" rel="noopener">{{ title }}</a>
   {% elsif post.link %}
@@ -45,10 +45,10 @@
   {% else %}
     <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
   {% endif %}
-</h2>
+</h2> -->
 
     
-    {% if post.read_time %}
+<!--     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
@@ -95,4 +95,32 @@
     {% endif %}
 
   </article>
+<!-- </div> --> 
+
+<div class="pub-item">
+  <p>
+    {% if post.citation %}
+      {% if post.paperurl %}
+        {{ post.citation | replace: post.title, '<a href="' | append: post.paperurl | append: '" target="_blank" rel="noopener">' | append: post.title | append: '</a>' }}
+      {% else %}
+        {{ post.citation }}
+      {% endif %}
+    {% else %}
+      {% if post.authors %}
+        {{ post.authors }},
+      {% endif %}
+      {% if post.date %}
+        ({{ post.date | date: "%Y" }})
+      {% endif %}
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank" rel="noopener">{{ post.title }}</a>.
+      {% else %}
+        {{ post.title }}.
+      {% endif %}
+      {% if post.venue %}
+        <i>{{ post.venue }}</i>
+      {% endif %}
+    {% endif %}
+  </p>
 </div>
+
