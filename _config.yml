@@ -230,6 +230,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  performances:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -287,6 +290,18 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+
+  # _performances
+  - scope:
+      path: ""
+      type: performances
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+
+
 
 
 # Sass/SCSS
@@ -348,6 +363,7 @@ tag_archive:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
+
 
 
 # HTML Compression
