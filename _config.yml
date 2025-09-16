@@ -230,7 +230,7 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  performances:
+  experiments:
     output: true
     permalink: /:collection/:path/
 
@@ -294,7 +294,7 @@ defaults:
   # _performances
   - scope:
       path: ""
-      type: performances
+      type: experiments
     values:
       layout: single
       author_profile: true
