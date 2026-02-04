@@ -4,38 +4,82 @@ title: "Home"
 permalink: /home/
 author_profile: true
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        /* Ensure the GIF takes up the full screen width while maintaining its aspect ratio */
+        /* General styling */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
-        #gif-container {
+
+        #banner {
+            position: relative; /* This is required for the text overlay */
             text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #000; /* Set a background color (optional) */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh; /* Full viewport height */
+            height: 100vh; /* Full viewport height for the GIF banner */
+            overflow: hidden;
         }
-        #gif-container img {
-            height: auto;
-            max-height: 100%;
-            max-width: 100%;
+
+        #banner img {
+            width: 100%; /* Make GIF cover the full width */
+            height: 100%; /* Stretch GIF to fill full height */
+            object-fit: cover; /* Maintain aspect ratio while filling the container */
+            z-index: -1; /* Push the GIF below the text */
+            position: absolute; /* Bind GIF to the banner container */
+            top: 0;
+            left: 0;
+        }
+
+        #banner-content {
+            position: absolute; /* Places content in the center of the banner */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centers the text */
+            z-index: 1; /* Ensure the text is above the GIF */
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow for readability */
+        }
+
+        #banner-content h1 {
+            font-size: 3rem; /* Main title size */
+            margin-bottom: 10px;
+        }
+
+        #banner-content p {
+            font-size: 1.2rem; /* Subtitle size */
+            margin: 5px 0;
+        }
+
+        #banner-content a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff; /* Button background color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #banner-content a:hover {
+            background-color: #0056b3; /* Button hover color */
         }
     </style>
 </head>
 <body>
-    <!-- GIF Section -->
-    <div id="gif-container">
+    <!-- GIF Section with Text Overlay -->
+    <div id="banner">
         <img src="/images/gif_mariposa.gif" alt="Awesome GIF" />
+        <div id="banner-content">
+            <h1>Lianne Sánchez-Rodríguez</h1>
+            <p>Neuroengineering, Computational Neuroscience, Brain-Computer Interfaces, Generative AI, Neurorehabilitation</p>
+            <!-- Optional Button -->
+            <a href="#learn-more">Learn More</a>
+        </div>
     </div>
 </body>
 </html>
