@@ -7,23 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-## Welcome to My Website! 🎉
+## Short Bio
+I was born and raised in Ponce, Puerto Rico; La Isla del Encanto. 
 
-Hi there! 👋 I'm [Your Name], a [your profession/title], passionate about [your passions/interests]. I built this site to showcase my skills, experiences, and creative projects. Explore my world and connect with me to know more!
+I am a Ph.D. student in Electrical Engineering at the University of Houston and a member of the Laboratory for Non-invasive Brain-Machine Interface Systems. I completed my M.S. in Applied Biomedical Engineering at Johns Hopkins University and my B.S. in Computer Engineering at the University of Puerto Rico, Mayagüez.
 
-### 🔭 What I Do
-- 🖥️ Building [amazing tools/professional expertise].
-- 📚 Learning and researching about [specific topic].
-- 🎨 Creating [digital art, music, etc.].
+My research focuses on the analysis and decoding of non-invasive electroencephalographic (EEG) signals to better understand brain dynamics and develop human-centered technologies. My work includes developing EEG-based generative AI systems that create personalized music using brain signals, investigating the neural mechanisms behind creativity and artistic expression, and contributing to the development of brain-computer interface systems for neurorehabilitation, particularly for stroke recovery. I have also worked on multimodal neural data acquisition and embedded system optimization for wearable and portable neurotechnology.
 
-### 🌟 Fun Facts
-- 🌎 Based in [your city or country].
-- 🎮 Love playing [gaming hobby/specific game].
-- 📖 Favorite book: [your favorite book].
+My research is inherently multidisciplinary, integrating neuroscience, artificial intelligence, biomedical engineering, and the arts to better understand brain function and translate neural signals into meaningful real-world applications.
 
-### 💼 Let's Connect
-- 📧 Email me at: [your email]
-- 🐦 Follow me on Twitter: [your Twitter link]
-- 🔗 Visit my [LinkedIn/Portfolio/Other link].
+## Research Interests
 
-🚀 Thanks for stopping by! Keep exploring!
+Computational Neuroscience, Brain-Computer Interfaces, Neurorehabilitation, Music-based Interventions, Generative AI, Embedded Systems
+
+🧠 Thanks for stopping by! Keep exploring!
