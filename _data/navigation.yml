@@ -17,18 +17,18 @@ main:
   - title: "Talks"
     url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  #- title: "Teaching"
+   # url: /teaching/    
 
-  - title: "In The Media"
-    url: /media/  
+  #- title: "In The Media"
+  #  url: /media/  
   # - title: "Portfolio"
   #   url: /portfolio/
         
   # - title: "Blog Posts"
   #   url: /year-archive/
-  - title: "Community"
-    url: /community/ 
+  #- title: "Community"
+  #  url: /community/ 
     
   - title: "CV"
     url: /cv/
