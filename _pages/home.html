@@ -4,71 +4,21 @@ title: "Home"
 permalink: /home/
 author_profile: true
 ---
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        /* General styling for the body */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Styles for the banner container */
-        #banner {
-            position: relative; /* Creates a context for absolutely positioned elements */
-            height: 100vh; /* Makes the banner fill the entire viewport height */
-            overflow: hidden; /* Ensures no overflow outside the banner container */
-            background: #000; /* Fallback color in case the GIF doesn’t load */
-        }
-
-        /* Styling for the GIF in the banner */
-        #banner img {
-            width: 100%; /* Makes GIF span the full width of the screen */
-            height: 100%; /* Fills the height of the screen */
-            object-fit: cover; /* Ensures the GIF covers the container without distortion */
-            position: absolute; /* Positions the GIF within the parent `#banner` */
-            top: 0;
-            left: 0;
-            z-index: -1; /* Pushes the GIF behind the content */
-        }
-
-        /* Styling for the overlay text */
-        #banner-content {
-            text-align: center; /* Center-aligns text within the banner */
-            position: absolute; /* Allows precise placement of text over the GIF */
-            top: 50%; /* Vertically centers the text */
-            left: 50%; /* Horizontally centers the text */
-            transform: translate(-50%, -50%); /* Centers exactly */
-            color: white;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Adds shadow to text for better readability */
-        }
-
-        #banner-content h1 {
-            font-size: 3rem; /* Sets a large size for the header */
-            margin: 0;
-            padding-bottom: 1rem; /* Adds space below the main title */
-        }
-
-        #banner-content p {
-            font-size: 1.5rem; /* Sets size for the subtitle text */
-            margin: 0; /* Removes extra spacing */
-        }
-    </style>
+    <title>Video Test</title>
 </head>
 <body>
-    <!-- GIF Section -->
-    <div id="banner">
-        <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
-    <source src="/images/mariposa.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-</video>
-        <div id="banner-content">
-            <h1>Lianne Sánchez-Rodríguez</h1>
-            <p>Neuroengineering, Computational Neuroscience, Brain-Computer Interfaces, Generative AI, Neurorehabilitation, Music-based Interventions</p>
-        </div>
-    </div>
+    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+        <source src="/lsanchezrodriguez.com/images/mariposa.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
+
+
