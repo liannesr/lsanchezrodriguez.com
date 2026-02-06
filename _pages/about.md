@@ -3,8 +3,7 @@ permalink: /about/
 title: "About Me"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+
 ---
 
 ## Short Bio
@@ -21,3 +20,5 @@ My research is inherently multidisciplinary, integrating neuroscience, artificia
 Computational Neuroscience, Brain-Computer Interfaces, Neurorehabilitation, Music-based Interventions, Generative AI, Embedded Systems
 
 🧠 Thanks for stopping by! Keep exploring!
+
+ 
