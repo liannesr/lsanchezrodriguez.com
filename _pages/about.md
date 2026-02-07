@@ -156,6 +156,9 @@ ul li::after {
     <a href="https://github.com/{{ site.author.github }}" title="GitHub" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
+    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn" aria-label="LinkedIn">
+  <i class="fab fa-linkedin"></i>
+</a>
   </div>
 </div>
 
