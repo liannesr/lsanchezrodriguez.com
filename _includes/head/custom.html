@@ -15,3 +15,44 @@
 <meta name="theme-color" content="#ffffff"/>
 
 <!-- end custom head snippets -->
+<!-- start custom head snippets -->
+
+<style>
+/* Remove sidebar artifacts globally */
+.archive ul:not(.social-icons):not(.pagination):not(.taxonomy__index):not(.about-content ul) {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.archive ul:not(.social-icons):not(.pagination):not(.taxonomy__index) > li::before,
+.archive ul:not(.social-icons):not(.pagination):not(.taxonomy__index) > li::after {
+  content: none !important;
+  display: none !important;
+}
+
+.archive {
+  width: 100% !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  float: none !important;
+  padding: 0 2em !important;
+}
+
+#main {
+  max-width: 100% !important;
+}
+
+/* Ensure publications, experiments, talks lists display properly */
+.list__item {
+  list-style: none !important;
+}
+
+.list__item::before {
+  content: none !important;
+}
+</style>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
