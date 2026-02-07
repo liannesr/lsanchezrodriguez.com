@@ -1,10 +1,22 @@
 ---
-permalink: /home/
-title: "About Me"
-author_profile: true
+permalink: /about/
+title: ""
+author_profile: false
+layout: archive
+classes: wide
 redirect_from: 
-
+  - /about.html
 ---
+
+<div style="text-align: center; margin: 3em auto; max-width: 800px;">
+  <img src="{{ site.baseurl }}/images/profile.png" 
+       alt="Lianne Sánchez-Rodríguez" 
+       style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 6px 12px rgba(0,0,0,0.4); margin-bottom: 1.5em;">
+  <h1 style="margin-top: 0.5em;">Lianne Sánchez-Rodríguez</h1>
+  <p style="font-style: italic; font-size: 1.1em; color: #888; margin-bottom: 2em;">PhD Student in Electrical Engineering</p>
+</div>
+
+<div style="max-width: 800px; margin: 0 auto; text-align: left;">
 
 ## Short Bio
 I was born and raised in Ponce, Puerto Rico; La Isla del Encanto. 
@@ -20,5 +32,7 @@ My research is inherently multidisciplinary, integrating neuroscience, artificia
 Computational Neuroscience, Brain-Computer Interfaces, Neurorehabilitation, Music-based Interventions, Generative AI, Embedded Systems
 
 🧠 Thanks for stopping by! Keep exploring!
+
+</div>
 
  
