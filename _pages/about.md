@@ -1,100 +1,168 @@
 ---
 permalink: /home/
-title: "About Me"
+title: ""
 layout: archive
-classes: wide
+redirect_from: 
+  - /about.html
 ---
 
 <style>
-.about-header {
+/* Aggressively remove all list styling and sidebar artifacts */
+.archive ul, 
+.archive ol, 
+.archive li,
+.sidebar ul,
+.sidebar li,
+.author__urls ul,
+.author__urls li {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove any before/after pseudo elements that create bullets or arrows */
+.archive li::before,
+.archive li::after,
+ul li::before,
+ul li::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Hide the page title entirely */
+.page__title {
+  display: none !important;
+}
+
+/* Center and style the profile section */
+.profile-header {
   text-align: center;
   margin: 3em auto 2em;
   max-width: 800px;
 }
 
-.about-header img {
-  width: 200px;
-  height: 200px;
+.profile-image {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
   margin-bottom: 1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.about-header h1 {
+.profile-name {
   margin: 0.5em 0 0.2em;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--global-text-color);
 }
 
-.about-subtitle {
+.profile-institution {
   font-style: italic;
-  font-size: 1.1em;
-  color: var(--global-text-color-light);
+  font-size: 1.2em;
+  color: #aaa;
   margin: 0.5em 0 1em;
 }
 
-.about-icons {
+.profile-institution i {
+  margin-right: 0.3em;
+}
+
+.profile-icons {
   display: flex;
   justify-content: center;
-  gap: 1.5em;
-  margin: 1em 0 2em;
-  font-size: 1.5em;
+  align-items: center;
+  gap: 2em;
+  margin: 1.5em 0 2em;
+  font-size: 2em;
+  flex-wrap: wrap;
 }
 
-.about-icons a {
-  color: var(--global-text-color-light);
+.profile-icons a {
+  color: #aaa;
   transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.about-icons a:hover {
-  color: var(--global-link-color);
-  transform: scale(1.15);
+.profile-icons a:hover {
+  color: #0ea1c5;
+  transform: scale(1.2);
+  text-decoration: none;
 }
 
+/* Content area */
 .about-content {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 2em;
   text-align: left;
+  line-height: 1.8;
+}
+
+.about-content h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1.8em;
+  border-bottom: 2px solid var(--global-border-color);
+  padding-bottom: 0.5em;
+}
+
+.about-content p {
+  margin-bottom: 1.5em;
+  font-size: 1.05em;
+}
+
+/* Remove any stray bullets or markers from content */
+.about-content ul,
+.about-content ol {
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.about-content ul li,
+.about-content ol li {
+  margin-left: 0;
+  padding-left: 0;
 }
 </style>
 
-<div class="about-header">
-  <img src="{{ site.baseurl }}/images/profile.png" alt="Lianne Sánchez-Rodríguez">
-  <h1>{{ site.author.name }}</h1>
-  <p class="about-subtitle">
-    <i class="fas fa-building-columns"></i> {{ site.author.employer }}
+<div class="profile-header">
+  <img src="{{ site.baseurl }}/images/profile.png" 
+       alt="Lianne Sánchez-Rodríguez" 
+       class="profile-image">
+  
+  <h1 class="profile-name">Lianne Sánchez-Rodríguez</h1>
+  
+  <p class="profile-institution">
+    <i class="fas fa-building-columns"></i> University of Houston
   </p>
   
-  <div class="about-icons">
-    {% if site.author.email %}
-      <a href="mailto:{{ site.author.email }}" title="Email" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-    {% endif %}
-    
-    {% if site.author.googlescholar %}
-      <a href="{{ site.author.googlescholar }}" title="Google Scholar" aria-label="Google Scholar">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    {% endif %}
-    
-    {% if site.author.orcid %}
-      <a href="{{ site.author.orcid }}" title="ORCID" aria-label="ORCID">
-        <i class="ai ai-orcid"></i>
-      </a>
-    {% endif %}
-    
-    {% if site.author.github %}
-      <a href="https://github.com/{{ site.author.github }}" title="GitHub" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-    {% endif %}
+  <div class="profile-icons">
+    <a href="mailto:{{ site.author.email }}" title="Email" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="{{ site.author.googlescholar }}" title="Google Scholar" aria-label="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+    <a href="{{ site.author.orcid }}" title="ORCID" aria-label="ORCID">
+      <i class="ai ai-orcid"></i>
+    </a>
+    <a href="https://github.com/{{ site.author.github }}" title="GitHub" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
   </div>
 </div>
 
 <div class="about-content">
 
 ## Short Bio
+
 I was born and raised in Ponce, Puerto Rico; La Isla del Encanto. 
 
 I am a Ph.D. student in Electrical Engineering at the University of Houston and a member of the Laboratory for Non-invasive Brain-Machine Interface Systems. I completed my M.S. in Applied Biomedical Engineering at Johns Hopkins University and my B.S. in Computer Engineering at the University of Puerto Rico, Mayagüez.
