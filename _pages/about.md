@@ -1,7 +1,7 @@
 ---
 permalink: /home/
 title: "About Me"
-layout: single
+layout: archive
 classes: wide
 ---
 
