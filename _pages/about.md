@@ -1,11 +1,9 @@
 ---
-permalink: /about/
-title: ""
-author_profile: false
-layout: archive
-classes: wide
+permalink: /home/
+title: "About Me"
+author_profile: true
 redirect_from: 
-  - /about.html
+
 ---
 
 <div style="text-align: center; margin: 3em auto; max-width: 800px;">
