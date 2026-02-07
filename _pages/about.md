@@ -162,9 +162,7 @@ ul li::after {
   </div>
 </div>
 
-<div class="about-content">
-
-## Short Bio
+<div class="about-content" markdown="1">
 
 I was born and raised in Ponce, Puerto Rico; La Isla del Encanto. 
 
