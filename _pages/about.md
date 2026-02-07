@@ -3,8 +3,6 @@ permalink: /about/
 title: "About Me"
 layout: single
 classes: wide
-redirect_from: 
-  - /about.html
 ---
 
 <style>
