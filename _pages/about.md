@@ -1,21 +1,100 @@
 ---
 permalink: /about/
-title: ""
-author_profile: false
-layout: archive
+title: "About Me"
+layout: single
 classes: wide
 redirect_from: 
+  - /about.html
 ---
 
-<div style="text-align: center; margin: 3em auto; max-width: 800px;">
-  <img src="{{ site.baseurl }}/images/profile.png" 
-       alt="Lianne Sánchez-Rodríguez" 
-       style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 6px 12px rgba(0,0,0,0.4); margin-bottom: 1.5em;">
-  <h1 style="margin-top: 0.5em;">Lianne Sánchez-Rodríguez</h1>
-  <p style="font-style: italic; font-size: 1.1em; color: #888; margin-bottom: 2em;">PhD Student in Electrical Engineering</p>
+<style>
+.about-header {
+  text-align: center;
+  margin: 3em auto 2em;
+  max-width: 800px;
+}
+
+.about-header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  margin-bottom: 1.5em;
+}
+
+.about-header h1 {
+  margin: 0.5em 0 0.2em;
+  font-size: 2em;
+}
+
+.about-subtitle {
+  font-style: italic;
+  font-size: 1.1em;
+  color: var(--global-text-color-light);
+  margin: 0.5em 0 1em;
+}
+
+.about-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 1em 0 2em;
+  font-size: 1.5em;
+}
+
+.about-icons a {
+  color: var(--global-text-color-light);
+  transition: all 0.3s ease;
+}
+
+.about-icons a:hover {
+  color: var(--global-link-color);
+  transform: scale(1.15);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+</style>
+
+<div class="about-header">
+  <img src="{{ site.baseurl }}/images/profile.png" alt="Lianne Sánchez-Rodríguez">
+  <h1>{{ site.author.name }}</h1>
+  <p class="about-subtitle">
+    <i class="fas fa-building-columns"></i> {{ site.author.employer }}
+  </p>
+  
+  <div class="about-icons">
+    {% if site.author.email %}
+      <a href="mailto:{{ site.author.email }}" title="Email" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    {% endif %}
+    
+    {% if site.author.googlescholar %}
+      <a href="{{ site.author.googlescholar }}" title="Google Scholar" aria-label="Google Scholar">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    {% endif %}
+    
+    {% if site.author.orcid %}
+      <a href="{{ site.author.orcid }}" title="ORCID" aria-label="ORCID">
+        <i class="ai ai-orcid"></i>
+      </a>
+    {% endif %}
+    
+    {% if site.author.github %}
+      <a href="https://github.com/{{ site.author.github }}" title="GitHub" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    {% endif %}
+  </div>
 </div>
 
-<div style="max-width: 800px; margin: 0 auto; text-align: left;">
+<div class="about-content">
 
 ## Short Bio
 I was born and raised in Ponce, Puerto Rico; La Isla del Encanto. 
@@ -33,5 +112,3 @@ Computational Neuroscience, Brain-Computer Interfaces, Neurorehabilitation, Musi
 🧠 Thanks for stopping by! Keep exploring!
 
 </div>
-
- 
