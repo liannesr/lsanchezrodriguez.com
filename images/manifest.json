@@ -1,5 +1,9 @@
 {
-	"name": "OOjs UI icon academic-progressive",
+	"name": "LSR",
+	"short_name": "LSR",
+	"theme_color": "#0a0a0a",
+	"background_color": "#0a0a0a",
+	"display": "standalone",
 	"icons": [
 		{
 			"src": "/images/favicon-192x192.png",
