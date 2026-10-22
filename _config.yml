@@ -83,6 +83,8 @@ author:
 publication_category:
   books:
     title: 'Books'
+  data_descriptors:
+    title: 'Data Descriptors'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
